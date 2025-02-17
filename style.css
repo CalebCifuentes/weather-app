@@ -1,0 +1,147 @@
+body{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;              /*163, 154, 154)*/
+background-image:linear-gradient(90deg, rgb(5, 189, 240), rgb(5, 118, 240));
+margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    margin-top: 7em;
+   
+}
+
+#cityinput{
+    width: 40em;
+    padding:21px;
+    align-items: center;
+    border:none;
+    border-radius: 20em;
+    outline:none;
+}
+
+ #search{
+    width: 55px;
+    height: 55px;
+    border-radius:50%;
+    cursor:pointer;
+    border:none;
+    background-color: white;
+}
+
+
+#search::before{
+    content: "\f689";/* FontAwesome search icon */
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.weathericon{
+ width: 12em;
+ height: 12em;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top:1em;
+}
+
+ .weathericon img{
+    width: 85%;
+    height: max-content;
+}
+
+.city{
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width:max-content;
+    height: fit-content;
+    width: max-content;
+    font-family: "Fredoka", serif;
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color:rgb(211, 219, 224);
+}
+
+
+
+.temp{
+    height:fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fredoka", serif;
+    font-weight: 500;
+    font-size: 2em;
+    margin-top:-1em;
+    color:rgb(211, 219, 224);
+}
+
+
+
+.humidity, .windspeed{
+    width: fit-content;
+    height: max-content;
+
+    margin-inline-start: 10em;
+    margin-inline-end: 10em;
+    text-align: center;
+    margin:4em;
+    margin-top: 2em;
+    
+}
+
+.humidity img{
+    width:10em;
+    filter:grayscale(100%) brightness(0) invert(1);
+    
+}
+
+.humiditypercent{
+    
+    width: 10em;
+    height:2em;
+    font-family: "Fredoka", serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: white;
+}
+
+
+
+.windspeed img{
+    filter: grayscale(100%) brightness(0) invert(1);
+    padding:.5em;
+    width: 9em;
+}
+
+.windspeedmph{
+   
+    width:10em;
+    height:2em;
+    font-family: "Fredoka", serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: white;
+}
+
+
+.stats{
+    display:flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+
+
+
